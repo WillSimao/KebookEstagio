@@ -1,0 +1,160 @@
+@import url(./global.css);
+
+.container-header {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  padding: 17px 0;
+  width: 100%;
+}
+
+.wrapper-logo {
+  padding: 0 30px;
+}
+
+.container-button {
+  display: flex;
+}
+
+.wrapper-button {
+  display: flex;
+}
+
+.wrapper-button button {
+  color: white;
+  cursor: pointer;
+  font-family: "Kebook", Arial, sans-serif;
+  font-size: 17px;
+  padding: 8.5px 17px;
+  background: transparent;
+  border: none;
+}
+
+.wrapper-button button:hover {
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+
+.wrapper-background {
+  background: url(/assets/img/back-top-home.png);
+  background-size: cover;
+  background-position: center;
+  height: 643px;
+}
+
+.container-publi {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.wrapper-text-info {
+  padding-left: 75px;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  font-family: "Kebook", Arial, sans-serif;
+  color: white;
+}
+
+.text-info h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.text-info span {
+  font-weight: 700;
+}
+
+.text-info p {
+  font-size: 1.25rem;
+  margin: 0 0 17px;
+  line-height: 30px;
+}
+
+.container-button-publi button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 50px;
+  border: 2px solid white;
+  color: white;
+  width: 300px;
+  height: 60px;
+  font-size: 15px;
+  font-family: "Kebook", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.container-img {
+  position: relative;
+  top: 80px;
+  right: 70px;
+}
+
+.wrapper-img img {
+  width: 634px;
+  height: 578px;
+}
+
+.container-infocard {
+  margin: 30px 0;
+}
+
+.wrapper-infocard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  font-family: "Kebook", Arial, sans-serif;
+}
+
+.wrapper-infocard h1 {
+  margin: 15px 0 8px;
+  color: #3e464f;
+  font-size: 1.6rem;
+}
+
+.wrapper-infocard p {
+  color: #3e464f;
+  font-size: 17px;
+}
+
+.atracao {
+  display: flex;
+  flex-direction: column;
+  width: 304px;
+  height: 50px;
+  align-items: flex-start;
+  line-height: 25px;
+}
+
+.relacionamento {
+  display: flex;
+  flex-direction: column;
+  width: 304px;
+  height: 50px;
+  align-items: flex-start;
+  line-height: 25px;
+}
+
+.escala {
+  display: flex;
+  flex-direction: column;
+  width: 304px;
+  height: 50px;
+  align-items: flex-start;
+  line-height: 25px;
+}
+
+.atendimento {
+  display: flex;
+  flex-direction: column;
+  width: 304px;
+  height: 50px;
+  align-items: flex-start;
+  line-height: 25px;
+}
