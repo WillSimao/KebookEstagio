@@ -21,7 +21,6 @@
 }
 
 .wrapper-button button {
-  color: white;
   cursor: pointer;
   font-family: "Kebook", Arial, sans-serif;
   font-size: 17px;
@@ -30,9 +29,25 @@
   border: none;
 }
 
+.wrapper-button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .wrapper-button button:hover {
   border-bottom: 2px solid white;
   font-weight: bold;
+}
+
+.mobile-menu {
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background-color: #fff;
+  margin: 8px;
 }
 
 .wrapper-background {
@@ -82,17 +97,28 @@
   border-radius: 50px;
   border: 2px solid white;
   color: white;
-  width: 300px;
+  width: 325px;
   height: 60px;
-  font-size: 15px;
+  font-size: 18px;
   font-family: "Kebook", Arial, sans-serif;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.container-button-publi button:hover {
+  background-color: #ffffff;
+  color: #ff8b00;
+  transition: linear 400ms;
 }
 
 .container-img {
   position: relative;
   top: 80px;
   right: 70px;
+}
+
+.ul-nav-bar li {
+  list-style: none;
 }
 
 .wrapper-img img {
@@ -102,6 +128,7 @@
 
 .container-infocard {
   margin: 30px 0;
+  border: 2px solid black;
 }
 
 .wrapper-infocard {
@@ -110,6 +137,7 @@
   align-items: center;
   gap: 100px;
   font-family: "Kebook", Arial, sans-serif;
+  border: 2px solid red;
 }
 
 .wrapper-infocard h1 {
@@ -130,6 +158,7 @@
   height: 50px;
   align-items: flex-start;
   line-height: 25px;
+  border: 2px solid blue;
 }
 
 .relacionamento {
@@ -139,6 +168,7 @@
   height: 50px;
   align-items: flex-start;
   line-height: 25px;
+  border: 2px solid purple;
 }
 
 .escala {
@@ -148,6 +178,7 @@
   height: 50px;
   align-items: flex-start;
   line-height: 25px;
+  border: 2px solid green;
 }
 
 .atendimento {
@@ -157,4 +188,125 @@
   height: 50px;
   align-items: flex-start;
   line-height: 25px;
+  border: 2px solid pink;
+}
+
+@media (max-width: 426px) {
+  .container-button {
+    display: none;
+  }
+}
+
+@media (min-width: 426px) {
+  .container-nav-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  .container-infocard {
+    margin: 30px 45px;
+  }
+
+  .wrapper-infocard {
+    gap: 50px;
+  }
+
+  .wrapper-text-info {
+    padding-left: 155px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container-button {
+    padding: 0 60px;
+  }
+
+  .wrapper-background {
+    height: 482px;
+  }
+
+  .wrapper-text-info {
+    padding-left: 50px;
+    padding-top: 70px;
+  }
+
+  .wrapper-img img {
+    width: 454px;
+    height: 414px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper-logo {
+    padding: 0 0;
+  }
+
+  .container-button {
+    padding: 0 0;
+  }
+
+  .wrapper-button {
+    gap: 10px;
+  }
+
+  .wrapper-button button {
+    padding: 8.5px 0;
+  }
+
+  .wrapper-img img {
+    width: 274px;
+    height: 250px;
+  }
+
+  .container-infocard {
+    display: none;
+  }
+
+  .container-infocard-mobile {
+    margin: 30px 30px;
+  }
+
+  .wrapper-infocard-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .container-atracao-relacionamento {
+    display: flex;
+  }
+
+  .container-escala-atendimento {
+    display: flex;
+  }
+
+  .wrapper-infocard-mobile {
+    font-family: "Kebook", Arial, sans-serif;
+  }
+
+  .wrapper-infocard-mobile h1 {
+    margin: 15px 0 8px;
+    color: #3e464f;
+    font-size: 1.6rem;
+  }
+
+  .wrapper-infocard-mobile p {
+    color: #3e464f;
+    font-size: 17px;
+  }
+
+  .container-atracao-relacionamento {
+    gap: 30px;
+  }
+
+  .container-escala-atendimento {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 769px) {
+  .container-infocard-mobile {
+    display: none;
+  }
 }
