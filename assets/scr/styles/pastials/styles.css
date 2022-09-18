@@ -39,12 +39,19 @@
   font-weight: bold;
 }
 
+.container-nav-bar a {
+  text-decoration: none;
+  color: #3e464f;
+  font-family: "Kebook", Arial, sans-serif;
+  font-size: 17px;
+}
+
 .mobile-menu {
   cursor: pointer;
 }
 
 .mobile-menu div {
-  width: 32px;
+  width: 23px;
   height: 2px;
   background-color: #fff;
   margin: 8px;
@@ -128,7 +135,6 @@
 
 .container-infocard {
   margin: 30px 0;
-  border: 2px solid black;
 }
 
 .wrapper-infocard {
@@ -137,7 +143,6 @@
   align-items: center;
   gap: 100px;
   font-family: "Kebook", Arial, sans-serif;
-  border: 2px solid red;
 }
 
 .wrapper-infocard h1 {
@@ -158,7 +163,6 @@
   height: 50px;
   align-items: flex-start;
   line-height: 25px;
-  border: 2px solid blue;
 }
 
 .relacionamento {
@@ -168,7 +172,6 @@
   height: 50px;
   align-items: flex-start;
   line-height: 25px;
-  border: 2px solid purple;
 }
 
 .escala {
@@ -178,7 +181,6 @@
   height: 50px;
   align-items: flex-start;
   line-height: 25px;
-  border: 2px solid green;
 }
 
 .atendimento {
@@ -188,7 +190,6 @@
   height: 50px;
   align-items: flex-start;
   line-height: 25px;
-  border: 2px solid pink;
 }
 
 @media (max-width: 426px) {
@@ -234,6 +235,13 @@
   .wrapper-img img {
     width: 454px;
     height: 414px;
+  }
+
+  .container-infocard {
+    margin: 30px 20px;
+  }
+  .wrapper-infocard {
+    gap: 10px;
   }
 }
 
@@ -309,4 +317,81 @@
   .container-infocard-mobile {
     display: none;
   }
+}
+
+@media (max-width: 425px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container-header {
+    justify-content: space-between;
+  }
+
+  .container-logo {
+    margin: 0 20px;
+  }
+
+  .wrapper-text-info {
+    padding-left: 15px;
+    padding-top: 85px;
+  }
+
+  .text-info h2 {
+    font-size: 55px;
+  }
+
+  .container-publi {
+    flex-direction: column;
+  }
+  .wrapper-background {
+    height: 747px;
+  }
+
+  .wrapper-img img {
+    width: 400px;
+    height: 365px;
+  }
+  .container-img {
+    top: 15px;
+    right: 0;
+  }
+
+  .container-atracao-relacionamento {
+    flex-direction: column;
+  }
+
+  .container-escala-atendimento {
+    flex-direction: column;
+  }
+
+  .container-infocard-mobile {
+    margin: 30px 15px;
+  }
+
+  .wrapper-infocard-mobile {
+    line-height: 25px;
+  }
+}
+
+.ul-nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 8vh;
+  right: 0;
+  width: 50vw;
+  height: 92vh;
+  background-color: #ffffff;
+  transform: translateX(100%);
+}
+
+.ul-nav-bar.active {
+  transform: translateX(0);
+}
+
+.ul-nav-bar li {
+  margin-left: 0;
+  opacity: 0;
 }
